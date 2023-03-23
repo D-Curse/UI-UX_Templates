@@ -6,3 +6,17 @@ function myFunction() {
     x.className = "right";
   }
 }
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "curselvl99@gmail.com",
+    Password : "txlf ehpr rbzx xroj",
+    To : 'dhruvbhatada@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "ENQUIRY EMAIL",
+    Body : "hi"
+  }).then(
+    message => alert("Succesfully")
+  );
+}

@@ -36,37 +36,37 @@
                 </h2>
             </div>
             <div class="info-panels">
-                <div class="1">
+                <div class="icons" id="1">
                     <img src="img/1.png" alt="img">
                     <h2>    
                         Enable students to identify their best-fit career with our world-class career assessment and personalised guidance.
                     </h2>
                 </div>
-                <div class="2">
+                <div class="icons" id="2">
                     <img src="img/2.png" alt="img">
                     <h2>    
                         Empower students to learn all about the professional world with virtual career simulations, exhaustive career library, career blogs and vlogs.
                     </h2>
                 </div>
-                <div class="3">
+                <div class="icons" id="3">
                     <img src="img/3.png" alt="img">
                     <h2>    
                         Pave student’s way to their dream college with our end-to-end college application guidance, scholarship drive and corporate internship program.
                     </h2>
                 </div>
-                <div class="4">
+                <div class="icons" id="4">
                     <img src="img/4.png" alt="img">
                     <h2>    
                         Enable schools in creating a career guidance ecosystem in sync with the vision of New Education Policy
                     </h2>
                 </div>
-                <div class="5">
+                <div class="icons" id="5">
                     <img src="img/5.png" alt="img">
                     <h2>    
                         Empower educators to become International Certified Career Coaches and build a career in career guidance & counselling
                     </h2>
                 </div>
-                <div class="6">
+                <div class="icons" id="6">
                     <img src="img/6.png" alt="img">
                     <h2>    
                         Revolutionary assessment platform and technology driven career guidance solutions for educators to boost their career guidance & counselling practice
@@ -75,6 +75,16 @@
             </div>
         </div>
     </section>
+    <section class="contact">
+        <h1>Take the first step towards career clarity!</h1>
+        <h2>Discover your best-fit career with the world’s most-advanced career assessment</h2>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <input type="email" id="email" placeholder="Email ID" required>
+            <textarea id="msg" row="10" placeholder="Describe Your Problem"></textarea>
+            <button type="submit">SEND</button>
+        </form>
+    </section>
     <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
